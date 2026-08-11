@@ -3,20 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IP Address Disclosure</title>
+  <title>McDonald's Wi-Fi Security Department™</title>
 </head>
 
 <body>
-  <h1>IP Address Disclosure </h1>
+  <h1>🍔 McDonald's Wi-Fi Security Department™ 🍟</h1>
+
+  <p>
+    Congratulations! Your visit has been documented by our highly trained
+    McNugget Security Team. 😂
+  </p>
 
   <p>
     By clicking the button below, you consent to your public IP address
     being sent to the site owner.
   </p>
 
-  <button onclick="submitIP()">I Consent — Send My IP</button>
+  <p>
+    <strong>Status:</strong> Extremely suspicious 👀<br>
+    <strong>Threat Level:</strong> Big Mac 🍔<br>
+    <strong>Official Response:</strong> Please enjoy your fries. 🍟
+  </p>
+
+  <button onclick="submitIP()">🍟 I Consent — Send My IP 🍟</button>
 
   <p id="result"></p>
+
+  <p>
+    <small>
+      This is a joke. McDonald's has absolutely nothing to do with this website.
+    </small>
+  </p>
 
   <script>
     async function submitIP() {
@@ -43,15 +60,15 @@
 
         if (response.ok) {
           document.getElementById("result").textContent =
-            "Thank you. Your IP address has been submitted.";
+            "🍔 Thank you. Your IP has been reviewed by the McNugget Security Team. 😂";
         } else {
           document.getElementById("result").textContent =
-            "There was a problem submitting the information.";
+            "🍟 The McNugget Security Team encountered a problem.";
         }
 
       } catch (error) {
         document.getElementById("result").textContent =
-          "Unable to submit the information.";
+          "🍔 Even the McDonald's Wi-Fi couldn't handle that one.";
       }
     }
   </script>
